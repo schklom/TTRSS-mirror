@@ -3,7 +3,7 @@ FROM node:12-buster-slim
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
- && apt-get install -y xvfb libasound2 libnss3 libgconf-2-4 libxss1 libgtk-3-0
+ && apt-get install -y xvfb libasound2 libnss3 libgconf-2-4 libxss1 libgtk-3-0 python3 build-essential
 
 RUN mkdir /app
 ADD . /app/
